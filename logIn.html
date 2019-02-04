@@ -1,0 +1,8 @@
+<div ng-controller="loginController">
+<form id="myLogin" action="/">
+   UserName : <input type="text" name="username" id="username" ng-model="username" (input)="onSearchChange($event.target.value)" required /><br><br>
+   Password : <input type="password" name="password" id="password" ng-model="password" required /><br><br>
+   <button type="submit" ng-click="submit()">Login</button>   
+</form>
+</div>
+
